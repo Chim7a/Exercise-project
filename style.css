@@ -52,12 +52,11 @@ body {
 .hero-btn1,
 .hero-btn2 {
   color: white;
-  padding: 1rem 4.5rem;
+  padding: 1rem 5.5rem;
   border-radius: 3rem;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  font-size: 1.2rem;
 }
 
 .hero-btn1 {
@@ -79,15 +78,86 @@ body {
 }
 
 @media screen and (min-width: 650px) {
+  #hero {
+    background-image: url(/images/bg-header-desktop.png);
+  }
   #hero h3 {
+    font-size: 2.1rem;
     max-width: none;
   }
 
   #hero p {
-    max-width: 500px;
+    max-width: 550px;
   }
 
   .hero-btn-container {
     flex-direction: row;
+  }
+
+  .hero-btn1,
+  .hero-btn2 {
+    padding: 0.8rem 2.1rem;
+  }
+}
+
+/* Main content styling */
+
+.content-intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-intro h4 {
+  font-size: 1.5rem;
+  max-width: 300px;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+.content-intro p {
+  max-width: 300px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+}
+
+.track-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+  gap: 3rem;
+}
+
+.track-content img {
+  padding: 0 2rem;
+}
+
+.track-content h4 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.track-content p {
+  color: hsl(201, 11%, 66%);
+  max-width: 300px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 650px) {
+  .content-intro h4 {
+    max-width: 100%;
+  }
+
+  .content-intro p {
+    max-width: 600px;
   }
 }
