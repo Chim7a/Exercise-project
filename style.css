@@ -12,7 +12,6 @@ img {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 0.9rem;
 }
 
 #hero {
@@ -32,34 +31,63 @@ body {
   max-width: 250px;
   color: hsl(210, 10%, 33%);
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #hero p {
   color: hsl(201, 11%, 66%);
   font-family: sans-serif;
   max-width: 300px;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .hero-btn-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-top: 2rem;
 }
 
 .hero-btn1,
 .hero-btn2 {
-  border: none;
   color: white;
   padding: 1rem 6rem;
   border-radius: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  font-size: 1.2rem;
 }
 
 .hero-btn1 {
-  background-color: hsl(171, 66%, 44%);
+  background-color: #26baa4;
+  border: 3px solid #03ba9e;
+}
+.hero-btn1:active {
+  background-color: #2ee2c7;
+  border: 3px solid #2ee2c7;
 }
 
 .hero-btn2 {
-  background-color: hsl(233, 100%, 69%);
+  background-color: #6173ff;
+  border: 2px solid #5665d6;
+}
+.hero-btn2:active {
+  background-color: #818ffc;
+  border: 2px solid #5665d6;
+}
+
+@media screen and (min-width: 650px) {
+  #hero h3 {
+    max-width: none;
+  }
+
+  #hero p {
+    max-width: 500px;
+  }
+
+  .hero-btn-container {
+    flex-direction: row;
+  }
 }
