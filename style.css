@@ -344,7 +344,7 @@ footer ul {
   padding: 3rem 0;
   gap: 2rem;
   list-style: none;
-  color: hslahsl(210, 10%, 33%);
+  color: hsl(210, 10%, 33%);
   font-weight: 400;
 }
 
@@ -360,9 +360,14 @@ footer ul {
 @media screen and (min-width: 950px) {
   footer {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
   }
 
   footer ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 300px;
+    color: hsl(201, 11%, 66%);
   }
 }
