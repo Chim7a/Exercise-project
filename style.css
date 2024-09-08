@@ -29,6 +29,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   font-family: sans-serif;
+  line-height: 1.7rem;
 }
 
 #hero {
@@ -64,7 +65,9 @@ p {
 }
 
 .hero-btn1,
-.hero-btn2 {
+.hero-btn2,
+.bottom-hero-btn1,
+.bottom-hero-btn2 {
   color: white;
   padding: 1rem 5.5rem;
   border-radius: 3rem;
@@ -73,20 +76,24 @@ p {
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.hero-btn1 {
+.hero-btn1,
+.bottom-hero-btn1 {
   background-color: #26baa4;
   border: 3px solid #03ba9e;
 }
-.hero-btn1:active {
+.hero-btn1:active,
+.bottom-hero-btn1:active {
   background-color: #2ee2c7;
   border: 3px solid #2ee2c7;
 }
 
-.hero-btn2 {
+.hero-btn2,
+.bottom-hero-btn2 {
   background-color: #6173ff;
-  border: 2px solid #5665d6;
+  border: 2px solid #6978e8;
 }
-.hero-btn2:active {
+.hero-btn2:active,
+.bottom-hero-btn2:active {
   background-color: #818ffc;
   border: 2px solid #5665d6;
 }
@@ -322,6 +329,36 @@ p {
   }
 }
 
+/* Bottom hero Styling */
+
+.bottom-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 5rem 0;
+}
+
+.bottom-hero h3 {
+  max-width: 200px;
+}
+
+.bottom-hero p {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 950px) {
+  .bottom-hero h3 {
+    max-width: 500px;
+    font-size: 1.9rem;
+  }
+
+  .bottom-hero p {
+    max-width: 600px;
+  }
+}
+
 /* Footer Styling */
 
 footer {
@@ -351,6 +388,7 @@ footer ul {
 .contact-icons {
   display: flex;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .contact-icons img {
